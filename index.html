@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Bookshelf Apps</title>
+</head>
+
+<body>
+  <header class="content_header">
+    <h1>Bookshelf Apps</h1>
+    <p>Kelola daftar buku anda disini!</p>
+  </header>
+
+  <main>
+    <div class="section_container">
+      <section class="section_input">
+        <div class="form_header">
+          <h1>Masukan Buku Anda</h1>
+        </div>
+        <form action="#" class="form_input" id="form_input">
+          <div class="input">
+            <label for="judul">Judul</label>
+            <input type="text" class="judul" required>
+          </div>
+          <div class="input">
+            <label for="penulis">Penulis</label>
+            <input type="text" class="penulis" required>
+          </div>
+          <div class="input">
+            <label for="tahun">Tahun</label>
+            <input type="number" class="tahun" required>
+          </div>
+          <div class="status_buku">
+            <label for="status">Selesai dibaca</label>
+            <input type="checkbox" class="status">
+          </div>
+          <button type="submit" class="btnSubmit">Masukkan Buku ke rak <span class="type">Belum selesai
+              dibaca</span></button>
+        </form>
+      </section>
+
+      <section class="section_books">
+        <div class="header_content">
+          <h1>Daftar Buku Anda</h1>
+        </div>
+        <div class="search_book">
+          <form action="#" id="form_search" class="form_search">
+            <input type="text" class="search" placeholder="Cari buku anda...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="books">
+          <div class="book_status">
+            <div class="header">
+              <h1>Belum selesai dibaca</h1>
+            </div>
+            <div class="book_items" id="uncompletedBook"></div>
+          </div>
+          <div class="book_status">
+            <div class="header">
+              <h1>Selesai dibaca</h1>
+            </div>
+            <div class="book_items" id="completedBook"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="./assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F9FD;
+}
+
+.content_header {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.content_header h1,
+.content_header p {
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+}
+
+.section_container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 50px;
+}
+
+.section_input {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  border-radius: 10px;
+  padding: 30px;
+  height: 470px;
+  margin-top: -50px;
+  background-color: #fff;
+}
+
+.form_header h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_input .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input input {
+  margin-bottom: 20px;
+  padding: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+.form_input input:focus {
+  outline: none;
+}
+
+.form_input .btnSubmit {
+  margin: 10px 0;
+  border: 0;
+  color: #fff;
+  padding: 15px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgb(2, 80, 197);
+}
+
+.form_input .btnClose {
+  border: 0;
+  color: #fff;
+  padding: 15px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #D9534F;
+}
+
+.form_input .btnSubmit span {
+  font-weight: bold;
+}
+
+.form_input .btnSubmit:hover {
+  background-color: rgb(0, 56, 141);
+}
+
+.form_input .btnClose:hover {
+  background-color: #b1302b;
+}
+
+.section_books {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: -50px;
+  background-color: #fff;
+  flex-basis: 45%;
+}
+
+.section_books .header_content h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.search_book form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.search_book .search {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.search_book .search:focus {
+  outline: none;
+}
+
+.search_book .search::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+.search_book button {
+  padding: 0 15px;
+  background-color: rgb(2, 80, 197);
+  border: none;
+  border-radius: 10px;
+}
+
+.search_book button i {
+  color: #fff;
+}
+
+.search_book button:hover {
+  cursor: pointer;
+}
+
+.book_status .header h1 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.book_status .book_card {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #F7F9FD;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_status .book_card h1 {
+  font-size: 16px;
+}
+
+.book_status .book_card p {
+  font-size: 14px;
+}
+
+.book_status .book_card .action {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+}
+
+.book_status .book_card .action button {
+  padding: 10px;
+  font-size: 11px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.book_status .book_card .btnStatus {
+  padding: 5px;
+  font-size: 11px;
+  background-color: #5CB85C;
+  color: #fff;
+}
+
+.book_status .book_card .btnEdit {
+  padding: 5px;
+  font-size: 11px;
+  background-color: #E4A44A;
+  color: #fff;
+}
+
+.book_status .book_card .btnHapus {
+  padding: 5px;
+  font-size: 11px;
+  background-color: #D9534F;
+  color: #fff;
+}
+
+.book_status .action button:hover {
+  cursor: pointer;
+}
+
+.modal_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_form .modal_content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  box-shadow: 0px 0px 63px 32px rgba(0,0,0,0.83);
+}
+
+@media screen and (max-width: 425px) {
+  .section_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section_books {
+    margin-top: 10%;
+  }
+
+  .book_status .book_card .action {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .section_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section_input {
+    width: 90%;
+    margin: -50px auto;
+  }
+
+  .section_books {
+    width: 90%;
+    margin: 10% auto;
+  }
+}
